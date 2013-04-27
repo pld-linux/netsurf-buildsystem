@@ -8,7 +8,6 @@ Group:		Development/Building
 Source0:	http://download.netsurf-browser.org/libs/releases/buildsystem-%{version}.tar.gz
 # Source0-md5:	88f2fd584b1608c78133563f452b79ec
 URL:		http://www.netsurf-browser.org/
-BuildRequires:	tar >= 1:1.22
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
