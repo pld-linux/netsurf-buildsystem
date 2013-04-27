@@ -2,14 +2,13 @@ Summary:	Netsurf browser buildsystem
 Summary(pl.UTF-8):	Pliki do budowania bibliotek związanych z netsurf
 Name:		netsurf-buildsystem
 Version:	1.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Building
-Source0:	buildsystem.tar.xz
-# Source0-md5:	4a8d8ff9a51d112742cbfeebaa012007
+Source0:	http://download.netsurf-browser.org/libs/releases/buildsystem-%{version}.tar.gz
+# Source0-md5:	88f2fd584b1608c78133563f452b79ec
 URL:		http://www.netsurf-browser.org/
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	xz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -17,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Netsurf shared buildsystem.
 
 %prep
-%setup -q -n buildsystem
+%setup -q -n buildsystem-%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
