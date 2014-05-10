@@ -1,5 +1,5 @@
 Summary:	Netsurf browser buildsystem
-Summary(pl.UTF-8):	Pliki do budowania bibliotek związanych z netsurf
+Summary(pl.UTF-8):	Pliki do budowania komponentów przeglądarki Netsurf
 Name:		netsurf-buildsystem
 Version:	1.1
 Release:	1
@@ -13,6 +13,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Netsurf shared buildsystem.
+
+%description -l pl.UTF-8
+Pliki systemu budowania komponentów przeglądarki Netsurf.
 
 %prep
 %setup -q -n buildsystem-%{version}
@@ -28,5 +31,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc COPYING README
 %{_datadir}/%{name}
