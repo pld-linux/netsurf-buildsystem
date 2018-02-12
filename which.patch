@@ -1,0 +1,11 @@
+--- buildsystem-1.6/makefiles/Makefile.tools~	2017-10-12 12:20:12.000000000 +0200
++++ buildsystem-1.6/makefiles/Makefile.tools	2018-02-12 18:52:04.790346431 +0100
+@@ -130,7 +130,7 @@
+   endif
+ 
+   # Search the path for the compiler
+-  toolpath_ := $(shell /bin/which $(CC__))
++  toolpath_ := $(shell /usr/bin/which $(CC__))
+   ifeq ($(toolpath_),)
+     toolpath_ := /opt/netsurf/$(HOST)/cross/bin/
+     CC__  := $(toolpath_)$(HOST)-gcc

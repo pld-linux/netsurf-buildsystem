@@ -9,6 +9,7 @@ Source0:	http://download.netsurf-browser.org/libs/releases/buildsystem-%{version
 # Source0-md5:	df81f3aaa4ee388f79a30068466377d3
 Patch0:		which.patch
 URL:		http://www.netsurf-browser.org/
+Requires:	which
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -20,7 +21,7 @@ Pliki systemu budowania komponentów przeglądarki Netsurf.
 
 %prep
 %setup -q -n buildsystem-%{version}
-#%patch0 -p1
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
