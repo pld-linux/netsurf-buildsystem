@@ -1,12 +1,12 @@
 Summary:	Netsurf browser buildsystem
 Summary(pl.UTF-8):	Pliki do budowania komponentów przeglądarki Netsurf
 Name:		netsurf-buildsystem
-Version:	1.6
+Version:	1.7
 Release:	1
 License:	MIT
 Group:		Development/Building
 Source0:	http://download.netsurf-browser.org/libs/releases/buildsystem-%{version}.tar.gz
-# Source0-md5:	df81f3aaa4ee388f79a30068466377d3
+# Source0-md5:	66d7bcc9d6b3507cd75b6feb681a7656
 Patch0:		which.patch
 URL:		http://www.netsurf-browser.org/
 Requires:	which
@@ -25,6 +25,7 @@ Pliki systemu budowania komponentów przeglądarki Netsurf.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	PREFIX=%{_prefix} \
 	DESTDIR=$RPM_BUILD_ROOT
