@@ -1,12 +1,12 @@
 Summary:	Netsurf browser buildsystem
 Summary(pl.UTF-8):	Pliki do budowania komponentów przeglądarki Netsurf
 Name:		netsurf-buildsystem
-Version:	1.8
+Version:	1.9
 Release:	1
 License:	MIT
 Group:		Development/Building
 Source0:	http://download.netsurf-browser.org/libs/releases/buildsystem-%{version}.tar.gz
-# Source0-md5:	0532139181cb1368d4036f24182a0561
+# Source0-md5:	66fbd2fca74647e06fb5b1f57408a101
 Patch0:		which.patch
 URL:		http://www.netsurf-browser.org/
 Requires:	which
